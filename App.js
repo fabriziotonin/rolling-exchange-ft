@@ -3,6 +3,7 @@ import { StyleSheet, View, StatusBar, Platform } from 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
 
 import TopContainer from './src/components/TopContainer';
+import BottomContainer from './src/components/BottomContainer';
 
 
 // LightTheme or darkTheme
@@ -21,6 +22,7 @@ export default function App() {
         (
           <Fragment>
             <TopContainer />
+            <BottomContainer />
           </Fragment>
         )
         :
