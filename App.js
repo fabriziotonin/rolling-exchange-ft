@@ -1,7 +1,8 @@
 import React, { useState, Fragment } from 'react';
 import { StyleSheet, View, StatusBar, Platform } from 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
-import colors from './src/constants/colors';
+
+import TopContainer from './src/components/TopContainer';
 
 
 // LightTheme or darkTheme
@@ -19,7 +20,7 @@ export default function App() {
         mainVisible ?
         (
           <Fragment>
-
+            <TopContainer />
           </Fragment>
         )
         :
@@ -29,7 +30,7 @@ export default function App() {
           </Fragment>
         )
       }
-      
+
     </PaperProvider>
   );
 }
